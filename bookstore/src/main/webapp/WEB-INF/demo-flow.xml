@@ -1,0 +1,25 @@
+<flow xmlns="http://www.springframework.org/schema/webflow"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/webflow
+http://www.springframework.org/schema/webflow/spring-webflow.xsd">
+
+	<view-state id="page1" view="billingAddress.jsp">
+		<transition on="event1" to="page3"></transition>
+	</view-state>
+	
+	<!-- <view-state id="page2" view="OrderDetails.jsp">
+	<transition on="event2" to="page3"></transition>
+	</view-state> -->
+	
+	<view-state id="page3" view="payment.jsp">
+	<transition on="event3" to="page4"></transition>
+	</view-state>
+	
+	
+	<view-state id="page4" view="Ordercomplete.jsp">
+		
+	</view-state>
+
+	
+	
+</flow>
